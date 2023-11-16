@@ -4,7 +4,7 @@ def integracion(f: Double => Double, a: Double, b: Double): Double = {
   ((b - a) / 6) * (f(a) + 4 * f(x) + f(b))
 }
 
-//Aproximación
+// Aproximación
 val inte1 = integracion(x => -x*x + 8*x - 12, 3, 5)
 val inte2 = integracion(x => 3*x*x, 0, 2)
 val inte3 = integracion(x => x + 2*x*x - x*x*x + 5*x*x*x*x, -1, 1)
@@ -19,10 +19,10 @@ def errAproximacion(valorEsp: Double, valorObt: Double): Double = {
 }
 
 // Calculo de errores
-val err1 = errAproximacion(7.346666666666667, inte1) = 0.013333333333332982
-val err2 = errAproximacion(8, inte2) = 0.0
-val err3 = errAproximacion(10.0/3.0, inte3) = 0.3333333333333335
-val err4 = errAproximacion(math.log(3), inte4) = 4.440892098500623e-16
-val err5 = errAproximacion(math.exp(1) - 1, inte5) = 4.440892098500623e-16
-val err6 = errAproximacion(math.log(2), inte6) = 4.440892098500623e-16
-val err7 = errAproximacion(math.Pi/4, inte7) = 4.440892098500623e-16
+val err1 = errAproximacion(7.346666666666667, inte1)
+val err2 = errAproximacion(8, inte2)
+val err3 = errAproximacion(10.0/3.0, inte3)
+val err4 = errAproximacion(math.log(3), inte4)
+val err5 = errAproximacion(math.exp(1) - 1, inte5)
+val err6 = errAproximacion(math.log(2), inte6)
+val err7 = errAproximacion(math.Pi/4, inte7)
